@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LatinoLearning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">🎓 LatinoLearning</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="scheduling.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <h1>Contact Us</h1>
+        <p>We'd Love to Hear From You</p>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h2>Send us a Message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="contactName">Your Name *</label>
+                        <input type="text" id="contactName" name="contactName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address *</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="contactPhone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Subject *</label>
+                        <select id="contactSubject" name="contactSubject" required>
+                            <option value="">Select a subject</option>
+                            <option value="GeneralInquiry">General Inquiry</option>
+                            <option value="Scheduling">Scheduling Question</option>
+                            <option value="Technical">Technical Support</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Partnership">Partnership Opportunity</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="6" required placeholder="Tell us how we can help..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    <p class="form-note">* Required fields</p>
+                </form>
+                <div id="contactFormMessage" class="form-message"></div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info-section">
+                <h2>Get in Touch</h2>
+
+                <div class="contact-method">
+                    <h3>📧 Email</h3>
+                    <p>
+                        <strong>General Inquiries:</strong> <a href="mailto:info@latinolearning.com">info@latinolearning.com</a>
+                    </p>
+                    <p>
+                        <strong>Scheduling:</strong> <a href="mailto:schedule@latinolearning.com">schedule@latinolearning.com</a>
+                    </p>
+                    <p>
+                        <strong>Technical Support:</strong> <a href="mailto:support@latinolearning.com">support@latinolearning.com</a>
+                    </p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>📱 Phone</h3>
+                    <p><strong>Main Line:</strong> (555) 123-4567</p>
+                    <p><strong>Hours:</strong> Monday - Friday, 3:00 PM - 8:00 PM</p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>📍 Location</h3>
+                    <p>
+                        LatinoLearning Community Center<br>
+                        123 Education Street<br>
+                        Los Angeles, CA 90001<br>
+                        United States
+                    </p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>🕐 Office Hours</h3>
+                    <ul class="hours-list">
+                        <li><strong>Monday - Friday:</strong> 3:00 PM - 8:00 PM</li>
+                        <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
+                    <p><em>We respond to emails within 24 hours</em></p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>🔗 Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/latinolearning" target="_blank" class="social-link">Facebook</a>
+                        <a href="https://instagram.com/latinolearning" target="_blank" class="social-link">Instagram</a>
+                        <a href="https://twitter.com/latinolearning" target="_blank" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section (Optional - can be expanded) -->
+        <div class="map-section">
+            <h2>Visit Us</h2>
+            <p>Our tutoring center is located in the heart of Los Angeles. We offer both in-person and online tutoring sessions.</p>
+            <div class="map-placeholder">
+                <p>📍 Map coming soon - 123 Education Street, Los Angeles, CA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LatinoLearning</h4>
+                <p>Providing free tutoring services to Latino students</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="scheduling.html">Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: <a href="mailto:info@latinolearning.com">info@latinolearning.com</a></p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LatinoLearning. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
