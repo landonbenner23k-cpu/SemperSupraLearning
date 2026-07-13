@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Session - LatinoLearning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">🎓 LatinoLearning</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="scheduling.html" class="nav-link active">Schedule</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Scheduling Hero -->
+    <section class="page-hero">
+        <h1>Schedule a Tutoring Session</h1>
+        <p>Book Your Free Session Today</p>
+    </section>
+
+    <!-- Scheduling Content -->
+    <section class="scheduling-content">
+        <div class="scheduling-container">
+            <div class="scheduling-form-section">
+                <h2>Book Your Session</h2>
+                <form id="schedulingForm" class="scheduling-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gradeLevel">Grade Level *</label>
+                        <select id="gradeLevel" name="gradeLevel" required>
+                            <option value="">Select Grade Level</option>
+                            <option value="6th">6th Grade</option>
+                            <option value="7th">7th Grade</option>
+                            <option value="8th">8th Grade</option>
+                            <option value="9th">9th Grade (Freshman)</option>
+                            <option value="10th">10th Grade (Sophomore)</option>
+                            <option value="11th">11th Grade (Junior)</option>
+                            <option value="12th">12th Grade (Senior)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject Needed *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select Subject</option>
+                            <option value="English">English & Literature</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Science">Science</option>
+                            <option value="History">Social Studies & History</option>
+                            <option value="ESL">ESL (English as a Second Language)</option>
+                            <option value="TestPrep">Test Preparation (SAT, ACT, AP)</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredDate">Preferred Date *</label>
+                        <input type="date" id="preferredDate" name="preferredDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredTime">Preferred Time *</label>
+                        <select id="preferredTime" name="preferredTime" required>
+                            <option value="">Select Time</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="3:30 PM">3:30 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                            <option value="4:30 PM">4:30 PM</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                            <option value="5:30 PM">5:30 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="6:30 PM">6:30 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+                            <option value="Saturday 10:00 AM">Saturday 10:00 AM</option>
+                            <option value="Saturday 11:00 AM">Saturday 11:00 AM</option>
+                            <option value="Saturday 12:00 PM">Saturday 12:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sessionType">Session Type *</label>
+                        <select id="sessionType" name="sessionType" required>
+                            <option value="">Select Type</option>
+                            <option value="In-Person">In-Person</option>
+                            <option value="Online">Online (Video Call)</option>
+                            <option value="Flexible">Either - I'm Flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="difficulties">Areas of Difficulty</label>
+                        <textarea id="difficulties" name="difficulties" rows="4" placeholder="Tell us what you're struggling with..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parentName">Parent/Guardian Name (if under 18)</label>
+                        <input type="text" id="parentName" name="parentName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parentEmail">Parent/Guardian Email</label>
+                        <input type="email" id="parentEmail" name="parentEmail">
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agreementCheckbox" name="agreement" required>
+                        <label for="agreementCheckbox">I agree to the terms and conditions *</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Schedule My Session</button>
+                    <p class="form-note">* Required fields</p>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+
+            <div class="scheduling-info-section">
+                <h3>📅 How It Works</h3>
+                <div class="info-box">
+                    <h4>1. Fill Out the Form</h4>
+                    <p>Tell us about yourself and what you need help with</p>
+                </div>
+                <div class="info-box">
+                    <h4>2. We'll Confirm</h4>
+                    <p>We'll contact you within 24 hours to confirm your session</p>
+                </div>
+                <div class="info-box">
+                    <h4>3. Attend Your Session</h4>
+                    <p>Meet with your tutor at the scheduled time</p>
+                </div>
+                <div class="info-box">
+                    <h4>4. Schedule More!</h4>
+                    <p>Continue with regular sessions for better results</p>
+                </div>
+
+                <h3 style="margin-top: 30px;">❓ Frequently Asked Questions</h3>
+                <div class="faq">
+                    <div class="faq-item">
+                        <h4>How long are sessions?</h4>
+                        <p>Sessions are typically 1 hour long, but can be adjusted based on your needs.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What if I need to reschedule?</h4>
+                        <p>No problem! Just contact us with at least 24 hours notice.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do I need any special software?</h4>
+                        <p>For online sessions, you'll just need a video call app like Zoom or Google Meet.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Is there really no cost?</h4>
+                        <p>Yes! LatinoLearning is 100% free. No hidden fees, ever.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>LatinoLearning</h4>
+                <p>Providing free tutoring services to Latino students</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="scheduling.html">Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: <a href="mailto:info@latinolearning.com">info@latinolearning.com</a></p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LatinoLearning. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
